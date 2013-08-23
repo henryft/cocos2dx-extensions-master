@@ -13,6 +13,8 @@
 #include "EXTestTurnCardLayer.h"
 #include "EXTestZoomControllerLayer.h"
 
+#include "EXSpecialyGoodEffect.h"
+
 EXTestScene::EXTestScene()
 {
     
@@ -89,8 +91,9 @@ void EXTestScene::initData(int testId, const char* titleStr)
             
         case 3:
             addChild(EXTestZoomControllerLayer::create());
+            break;
         case 4:
-            //addChild(<#cocos2d::CCNode *child#>);
+            addChild(EXSpecialyGoodEffect::create());
             break;
 
             

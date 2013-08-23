@@ -34,12 +34,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Cocos2dxExt/Classes/EXTestScene.cpp"
-         timestampString = "398838621.406371"
+         timestampString = "398918125.393937"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
+         startingLineNumber = "38"
+         endingLineNumber = "38"
          landmarkName = "EXTestScene::create(int testId, const char* titleStr)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Cocos2dxExt/Classes/SpeciallyGoodEffect/EXSpecialyGoodEffect.cpp"
+         timestampString = "398919275.204078"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "38"
+         endingLineNumber = "38"
+         landmarkName = "EXSpecialyGoodEffect::initData()"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
