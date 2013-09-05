@@ -94,7 +94,7 @@ void EXSpecialyGoodEffect::initData()
     // CCPageTurn3D
     //-------------------------------------------------------
     CCSprite* pageTurnSprite = CCSprite::create("Icon.png");
-    pageTurnSprite->setPosition(ccp(winSize.width * 0.8f,winSize.height * 0.4f));
+    pageTurnSprite->setPosition(ccp(0, 0));//ccp(winSize.width * 0.8f,winSize.height * 0.4f));
     pageTurnSprite->setAnchorPoint(ccp(0.0,0.0));
     addChild(pageTurnSprite);
     CCActionInterval* pageTurnAction = CCPageTurn3D::create(3.0f, CCSize(57,57));

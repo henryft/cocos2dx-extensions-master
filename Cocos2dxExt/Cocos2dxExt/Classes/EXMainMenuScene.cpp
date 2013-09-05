@@ -47,6 +47,7 @@ void EXMainMenuScene::initData()
     m_listData->addObject(CCString::create("Turn Card - 翻牌效果"));
     m_listData->addObject(CCString::create("Zoom Controller - 场景多点聚焦缩放"));
     m_listData->addObject(CCString::create("Specially Good Effect - 例子特效"));
+    m_listData->addObject(CCString::create("DynamicLight - 动态光照"));
     
     CCLabelTTF* labTitle = CCLabelTTF::create(" http://www.cocos2dev.com ", "Helvetica", 20.0);
     labTitle->setPosition(ccp(m_winSize.width * .5, m_winSize.height * .95));

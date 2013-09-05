@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "EXDynamicLightLayer::spriteWithColor(float):EXDynamicLightLayer.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mBackgroundArea.width">
+            </PersistentString>
+            <PersistentString
+               value = "mBackgroundArea.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EXDynamicLightLayer::update(float):EXDynamicLightLaeyr.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mCurTime">
+            </PersistentString>
+            <PersistentString
+               value = "mDaytime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EXDynamicLightLayer::_dayUpdate(float):EXDynamicLightLaeyr.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mAlpha">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EXDynamicLightLayer::update(float):EXDynamicLightLayer.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mLight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EXDynamicLightLayer::~EXDynamicLightLayer():EXDynamicLightLayer.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "mLight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -14,6 +14,7 @@
 #include "EXTestZoomControllerLayer.h"
 
 #include "EXSpecialyGoodEffect.h"
+#include "EXDynamicLightLayer.h"
 
 EXTestScene::EXTestScene()
 {
@@ -80,22 +81,21 @@ void EXTestScene::initData(int testId, const char* titleStr)
         case 0:
             addChild(EXTestDynamicLabelLayer::create());
             break;
-            
         case 1:
             addChild(EXTestGraySpriteLayer::create());
             break;
-            
         case 2:
             addChild(EXTestTurnCardLayer::create());
             break;
-            
         case 3:
             addChild(EXTestZoomControllerLayer::create());
             break;
         case 4:
             addChild(EXSpecialyGoodEffect::create());
             break;
-
+        case 5:
+            addChild(EXDynamicLightLayer::create());
+            break;
             
         default:
             break;
