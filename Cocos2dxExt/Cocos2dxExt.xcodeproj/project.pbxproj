@@ -2828,7 +2828,6 @@
 				E00FDA10178573E300D021D6 /* Sources */,
 				E00FDA11178573E300D021D6 /* Frameworks */,
 				E00FDA12178573E300D021D6 /* Resources */,
-				7478B47117C8634B0045E7D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2922,22 +2921,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7478B47117C8634B0045E7D0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E00FDA10178573E300D021D6 /* Sources */ = {
@@ -3376,6 +3359,7 @@
 				GCC_PREFIX_HEADER = Cocos2dxExt/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Cocos2dxExt/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Cocos2dxExt/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -3392,6 +3376,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Cocos2dxExt/libs/Chipmunk/include/chipmunk\" \"Cocos2dxExt/libs/Box2D\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3408,6 +3393,7 @@
 				GCC_PREFIX_HEADER = Cocos2dxExt/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = Cocos2dxExt/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Cocos2dxExt/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -3424,6 +3410,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Cocos2dxExt/libs/Chipmunk/include/chipmunk\" \"Cocos2dxExt/libs/Box2D\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
