@@ -50,6 +50,11 @@ EXSunShineSprite* EXSunShineSprite::createWithSpriteFrame(CCSpriteFrame *pSprite
     return NULL;
 }
 
+void EXSunShineSprite::setShinePic(const char* picName)
+{
+    this->setTexture(CCTextureCache::sharedTextureCache()->addImage(picName));
+}
+
 void EXSunShineSprite::draw()
 {
 	ccGLEnableVertexAttribs(kCCVertexAttribFlag_PosColorTex);

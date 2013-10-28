@@ -13,6 +13,9 @@
 #define HALF_DAY_LENGHT ( DAY_LENGHT * 0.5f)
 #define SCENE_MAX_ALPHA ( 190.0f )
 
+const char* STR_SUN_PIC = "sun.png";
+const char* STR_MOON_PIC = "moon.png";
+
 EXDynamicLightLayer::EXDynamicLightLayer()
 {
     mBackgroundArea = CCSizeZero;
@@ -57,7 +60,7 @@ void EXDynamicLightLayer::_initData()
     mBg->setPosition(ccp(mBackgroundArea.width * 0.5f,mBackgroundArea.height * 0.5f));
     addChild(mBg);
 
-    mSun = CCSprite::create("sun.png");
+    mSun = CCSprite::create(STR_SUN_PIC);
     mSun->setPosition(ccp(mBackgroundArea.width * 0.5f, mBackgroundArea.height * 0.5f)); 
     addChild(mSun);
     mGlow = EXSunShineSprite::create("glow.png");
@@ -143,5 +146,14 @@ void EXDynamicLightLayer::_nightUpdate(float dt)
 
 bool EXDynamicLightLayer::_dayNightSwitch(bool cur)
 {
-    return mDaytime = (!cur) ? true : false;
+    bool bDay = mDaytime = (!cur) ? true : false;
+    
+    if (bDay)
+        // update sun pic
+        mSun->setTexture(CCTextureCache::sharedTextureCache()->addImage(STR_SUN_PIC));
+    else
+        // update moon pic
+        mSun->setTexture(CCTextureCache::sharedTextureCache()->addImage(STR_MOON_PIC));
+    
+    return bDay;
 }

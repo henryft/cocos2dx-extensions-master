@@ -24,6 +24,9 @@ public:
     static EXSunShineSprite* createWithSpriteFrameName(const char *pszSpriteFrameName);
     static EXSunShineSprite* createWithSpriteFrame(CCSpriteFrame *pSpriteFrame);
     
+public:
+    void setShinePic(const char* picName);
+    
 	virtual void draw();
 };
 
